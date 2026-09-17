@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PSStudio | PSEEKER</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #1a0b2e 0%, #3d1a5b 40%, #7b2d8e 70%, #d4568b 100%);
+    color: #fff;
+    min-height: 100vh;
+  }
+
+  /* HEADER */
+  header {
+    text-align: center;
+    padding: 70px 20px 40px;
+  }
+  .logo {
+    font-size: 52px;
+    font-weight: 900;
+    background: linear-gradient(90deg, #ffdd55, #ff7ab8, #7ae8ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+  }
+  .tagline {
+    font-size: 18px;
+    color: #f0d9ff;
+    margin-top: 10px;
+    font-style: italic;
+  }
+  .subscribe-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 34px;
+    background: linear-gradient(90deg, #ff0000, #ff4b4b);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(255,0,0,0.4);
+    transition: transform 0.2s ease;
+  }
+  .subscribe-btn:hover { transform: scale(1.06); }
+
+  /* ABOUT SECTION */
+  .about {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+  }
+  .about h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ffdd55;
+  }
+  .about p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #f0e6f6;
+  }
+
+  /* VIDEO SECTION */
+  .videos {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+  .videos h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #7ae8ff;
+  }
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+  .video-card {
+    background: rgba(255,255,255,0.07);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  }
+  .video-card iframe {
+    width: 100%;
+    height: 180px;
+    border: none;
+    display: block;
+  }
+  .video-title {
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #fff;
+  }
+
+  /* SOCIAL LINKS */
+  .socials {
+    text-align: center;
+    margin: 60px auto 30px;
+  }
+  .socials a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 26px;
+    background: rgba(255,255,255,0.12);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 14px;
+    transition: background 0.2s ease;
+  }
+  .socials a:hover { background: rgba(255,255,255,0.25); }
+
+  footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 13px;
+    color: #d9c2e8;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">PSStudio</div>
+  <div class="tagline">Original Songs &amp; Visual Creations by PSEEKER</div>
+  <a class="subscribe-btn" href="https://www.youtube.com/@PSEEKER" target="_blank">▶ Subscribe on YouTube</a>
+</header>
+
+<div class="about">
+  <h2>About PSStudio</h2>
+  <p>
+    Welcome to my creative space! This is where I share my original songs and visual creations,
+    crafted from the inspiration, knowledge, and experiences I've gathered along my journey.
+    Every piece is a reflection of who I am, bringing together everything I've learned through music.
+    I hope you enjoy listening and watching as much as I enjoy creating.
+  </p>
+</div>
+
+<div class="videos">
+  <h2>🎵 Latest Videos</h2>
+  <div class="video-grid">
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/-d-avn7dXuQ&list=RD-d-avn7dXuQ&start_radio=1></iframe>
+      <div class="video-title">ສະບາຍດີປີໃຫມ່ລາວ /สวัสดีปีใหม่/ Happy Lao New Year/ P Seeker
+AI</div>
+    </div>
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/LbGltHdx3-Y&list=RDLbGltHdx3-Y&start_radio=1></iframe>
+      <div class="video-title">ຫຼິ້ນປີໃໝ່ລາວ / Lao New Year / Party music / by P Seeker</div>
+    </div>
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/N6YC6THHqz0&list=RDN6YC6THHqz0&start_radio=1></iframe>
+      <div class="video-title">ขอให้โชคดี I Say Ft. P-Seeker ( Official MV)</div>
+    </div>
+  </div>
+</div>
+
+<div class="socials">
+  <a href="https://www.youtube.com/@PSEEKER" target="_blank">YouTube</a>
+  <a href="#" target="_blank">Facebook</a>
+  <a href="#" target="_blank">Instagram</a>
+</div>
+
+<footer>
+  © 2026 PSStudio — All rights reserved.
+</footer>
+
+</body>
+</html>
