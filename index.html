@@ -34,17 +34,19 @@
   }
 
   body::after {
-    content: "";
-    position: fixed;
-    bottom: -60px;
-    right: -40px;
-    width: 480px;
-    height: 480px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cg fill='none' stroke='%2300d9ff' stroke-width='1.5' opacity='0.18'%3E%3Cpath d='M120 20 L128 15 L136 22 L131 34 L138 46 L131 58 L136 70 L128 78 L120 85 L112 100 L108 118 L110 136 Q112 150 100 160 Q86 172 68 168 Q52 164 46 148 Q40 132 50 118 Q58 106 74 104 Q88 102 96 90 L100 75 L96 60 L100 45 L96 30 L104 18 Z'/%3E%3Ccircle cx='68' cy='138' r='22'/%3E%3Ccircle cx='68' cy='138' r='10'/%3E%3Cline x1='120' y1='20' x2='124' y2='2'/%3E%3Cline x1='128' y1='15' x2='134' y2='0'/%3E%3Cline x1='136' y1='22' x2='144' y2='8'/%3E%3Ccircle cx='124' cy='2' r='3'/%3E%3Ccircle cx='134' cy='0' r='3'/%3E%3Ccircle cx='144' cy='8' r='3'/%3E%3C/g%3E%3C/svg%3E");
-    background-size: contain;
-    background-repeat: no-repeat;
-    pointer-events: none;
-    z-index: 0;
+      content: "";
+  position: fixed;
+  bottom: -30px;
+  right: -30px;
+  width: 420px;
+  height: 420px;
+  background-image: url('guitar.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.25;
+  filter: drop-shadow(0 0 20px rgba(0,217,255,0.5));
+  pointer-events: none;
+  z-index: 0;
   }
 
   header, .about, .videos, .socials, footer { position: relative; z-index: 1; }
