@@ -124,12 +124,23 @@
     font-size: 13px;
     color: #d9c2e8;
   }
-</style>
+</style>.logo-img {
+  width: 140px;
+  height: auto;
+  margin-bottom: 15px;
+  animation: gentleFloat 3s ease-in-out infinite;
+}
+
+@keyframes gentleFloat {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(3deg); }
+}
 </head>
 <body>
 
 <header>
-  <div class="logo">P SUCCESS STUDIO</div>
+    <img src="logo.png" alt="P Success Studio Logo" class="logo-img">
+  <div class="logo">P Success Studio</div>
   <div class="tagline">Original Songs &amp; Visual Creations by PSEEKER</div>
   <a class="subscribe-btn" href="https://www.youtube.com/@PSEEKER" target="_blank">▶ Subscribe on YouTube</a>
 </header>
