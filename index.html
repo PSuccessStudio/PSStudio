@@ -20,7 +20,7 @@
     overflow-x: hidden;
   }
 
-  /* Light-beam streaks + guitar silhouette in background */
+  /* Light-beam streaks background */
   body::before {
     content: "";
     position: fixed;
@@ -33,20 +33,37 @@
     z-index: 0;
   }
 
+  /* Guitar - bottom right corner */
   body::after {
-      content: "";
-  position: fixed;
-  bottom: -30px;
-  right: -30px;
-  width: 420px;
-  height: 420px;
-  background-image: url('guitar.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 0.25;
-  filter: drop-shadow(0 0 20px rgba(0,217,255,0.5));
-  pointer-events: none;
-  z-index: 0;
+    content: "";
+    position: fixed;
+    bottom: -30px;
+    right: -30px;
+    width: 420px;
+    height: 420px;
+    background-image: url('guitar.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.25;
+    filter: drop-shadow(0 0 20px rgba(0,217,255,0.5));
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Guitar - top left corner (second guitar) */
+  .guitar-left {
+    position: fixed;
+    top: -30px;
+    left: -40px;
+    width: 380px;
+    height: 380px;
+    background-image: url('guitar2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.25;
+    filter: drop-shadow(0 0 20px rgba(0,217,255,0.5));
+    pointer-events: none;
+    z-index: 0;
   }
 
   header, .about, .videos, .socials, footer { position: relative; z-index: 1; }
@@ -223,6 +240,8 @@
 </style>
 </head>
 <body>
+
+<div class="guitar-left"></div>
 
 <header>
     <img src="logo.png" alt="P Success Studio Logo" class="logo-img">
