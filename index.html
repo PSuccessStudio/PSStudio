@@ -5,8 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>P SUCCESS STUDIO | PSEEKER</title>
 <style>
- <style>
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Oswald:wght@400;600&display=swap');
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -21,7 +20,7 @@
     overflow-x: hidden;
   }
 
-  /* Subtle guitar-string / light-beam pattern in background */
+  /* Light-beam streaks + guitar silhouette in background */
   body::before {
     content: "";
     position: fixed;
@@ -34,6 +33,20 @@
     z-index: 0;
   }
 
+  body::after {
+    content: "";
+    position: fixed;
+    bottom: -60px;
+    right: -40px;
+    width: 480px;
+    height: 480px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cg fill='none' stroke='%2300d9ff' stroke-width='1.5' opacity='0.18'%3E%3Cpath d='M120 20 L128 15 L136 22 L131 34 L138 46 L131 58 L136 70 L128 78 L120 85 L112 100 L108 118 L110 136 Q112 150 100 160 Q86 172 68 168 Q52 164 46 148 Q40 132 50 118 Q58 106 74 104 Q88 102 96 90 L100 75 L96 60 L100 45 L96 30 L104 18 Z'/%3E%3Ccircle cx='68' cy='138' r='22'/%3E%3Ccircle cx='68' cy='138' r='10'/%3E%3Cline x1='120' y1='20' x2='124' y2='2'/%3E%3Cline x1='128' y1='15' x2='134' y2='0'/%3E%3Cline x1='136' y1='22' x2='144' y2='8'/%3E%3Ccircle cx='124' cy='2' r='3'/%3E%3Ccircle cx='134' cy='0' r='3'/%3E%3Ccircle cx='144' cy='8' r='3'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 0;
+  }
+
   header, .about, .videos, .socials, footer { position: relative; z-index: 1; }
 
   header {
@@ -41,10 +54,10 @@
     padding: 70px 20px 40px;
   }
   .logo {
-    font-family: 'Bebas Neue', 'Oswald', sans-serif;
-    font-size: 64px;
-    font-weight: 700;
-    letter-spacing: 5px;
+    font-family: 'Creepster', cursive;
+    font-size: 68px;
+    font-weight: 400;
+    letter-spacing: 4px;
     color: #fff;
     text-transform: uppercase;
     text-shadow:
@@ -115,8 +128,8 @@
     box-shadow: 0 0 25px rgba(0,150,255,0.1);
   }
   .about h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 30px;
+    font-family: 'Creepster', cursive;
+    font-size: 32px;
     letter-spacing: 2px;
     margin-bottom: 15px;
     color: #00d9ff;
@@ -135,9 +148,9 @@
     padding: 0 20px;
   }
   .videos h2 {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Creepster', cursive;
     text-align: center;
-    font-size: 34px;
+    font-size: 36px;
     letter-spacing: 2px;
     margin-bottom: 30px;
     color: #00d9ff;
@@ -205,7 +218,6 @@
     letter-spacing: 1px;
     color: #4a6a8a;
   }
-</style>
 </style>
 </head>
 <body>
